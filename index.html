@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Technical-Documentation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <header><h1 >PYTHON DOCUMENTATION</h1></header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Variables" class="nav-link">Variables</a>
+        <a href="#Data_Types" class="nav-link">Data Types</a>
+        <a href="#For_loop"class="nav-link">For Loop</a>
+        <a href="#If_else" class="nav-link">If else</a>
+      </nav>
+      
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>
+            <h1>Introduction</h1>
+          </header> 
+            <p>Python is a general purpose, dynamic, high-level, and interpreted programming language. It supports Object Oriented programming approach to develop applications. It is simple and easy to learn and provides lots of high-level data structures.</p>
+            <p>Python is easy to learn yet powerful and versatile scripting language, which makes it attractive for Application Development.Python's syntax and dynamic typing with its interpreted nature make it an ideal language for scripting and rapid application development.</p>
+            
+            <p>Python supports multiple programming pattern, including object-oriented, imperative, and functional or procedural programming styles.
+      
+      Python is not intended to work in a particular area, such as web programming. That is why it is known as multipurpose programming language because it can be used with web, enterprise, 3D CAD, etc. The basic syntax is as shown below</p>
+            <code>def func():<br>  
+             statement 1<br>    
+             statement 2 <br>   
+             ………………… <br>  
+             statement N 
+            </code> 
+        </section>
+       
+        <section class="main-section" id="Variables">
+          <header>
+            <h1>Variables</h1>
+          </header>
+          <p>Variable is a name that is used to refer to memory location. Python variable is also known as an identifier and used to hold value.In Python, we don't need to specify the type of variable because Python is a infer language and smart enough to get variable type.Variable names can be a group of both the letters and digits, but they have to begin with a letter or an underscore.It is recommended to use lowercase letters for the variable name. Rahul and rahul both are two different variables.</p>
+          <p>There are two types of variables in Python - Local variable and Global variable. Let's understand the following variables.</p>
+          <p>Local variables are the variables that declared inside the function and have scope within the function. Let's understand the following example.</p>
+       <code>
+         def add():  <br>
+         a = 50    <br>
+         b = 40    <br>
+         c = a + b  <br>
+         print("The sum is:", c)<br>
+         add()  
+         </code>
+         <p>In the above code, we declared a function named add() and assigned a few variables within the function. These variables will be referred to as the local variables which have scope only inside the function.<p> 
+          <p>Global variables can be used throughout the program, and its scope is in the entire program. We can use global variables inside or outside the function.
+      A variable declared outside the function is the global variable by default. Python provides the global keyword to use global variable inside the function. If we don't use the global keyword, the function treats it as a local variable. Let's understand the following example.</p>
+          <code>
+          x = 120  <br>
+          def mainFunction():  <br>
+          global x  <br>
+          print(x)   <br>
+          x = 'Welcome'  
+          print(x)  
+          mainFunction()  
+          print(x)
+         </code>  
+          <p>In the above code, we declare a global variable x and assign a value to it. Next, we defined a function and accessed the declared variable using the global keyword inside the function. Now we can modify its value. Then, we assigned a new string value to the variable x.</p>
+          </section>
+        
+        <section class="main-section" id="Data_Types">
+          <header>
+            <h1>Data Types</h1>
+          </header>  
+            <p>A variable can hold different types of values. For example, a person's name must be stored as a string whereas its id must be stored as an integer.Python provides various standard data types that define the storage method on each of them. The data types defined in Python are given below.</p>
+            <ol>
+                <li>Numbers</li>
+                <li>Sequence Type</li>
+                <li>Boolean</li>
+                <li>Set</li>
+                <li>Dictionary</li>
+           </ol>
+       </section>
+        
+      <section class="main-section" id="For_loop">
+        <header><h1>For Loop</h1></header>
+        <p>The for loop in Python is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like list, tuple, or dictionary.</p>
+        <code>
+          for iterating_var in sequence: <br>   
+          statement(s)    
+        </code>  
+      </section>
+      
+        
+      <section class="main-section" id="If_else">
+          <header><h1>If else</h1></header>
+          <p>The if-else statement provides an else block combined with the if statement which is executed in the false case of the condition.<p>
+          <code>
+            if condition: <br> 
+          #block of statements<br>   
+      else: <br>  
+          #another block of statements (else-block)   
+          </code>
+        </section>
+          
+        </main>
+
+</body>
+
+
+
+</html>

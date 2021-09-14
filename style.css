@@ -1,0 +1,50 @@
+main{
+    background-color:White;
+    color:black;
+  }
+  body{
+    min-width: 250px;
+  }
+  #navbar{
+    z-index:1;
+    position:fixed;
+    background-color:Black;
+    min-width:250px;
+    top:0px;
+    left:0px;
+    width:220px;
+    height:100%;
+    overflow-x: hidden;
+    padding-top: 20px; 
+    
+  }
+  #navbar h1{
+    color:white;
+  }
+  #navbar a{
+    text-decoration:none;
+    color:red;
+    padding: 5px 5px 5px 5px;
+    display:table;
+    font-size:20px;
+   }
+  #navbar a:hover{
+    color:white;
+  }
+  
+  #navbar h1{
+    font-size:18px;
+    padding:5px 5px;
+  }
+  
+  #main-doc{
+    position:absolute;
+    margin-left:300px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar {
+      padding-top: 15px;
+    }
+   
+  }
